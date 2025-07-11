@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<! UPDATED - July 11, 2025 by R. Cooper>
+<! ---->
+<! This is FREE GPL 3.0 layout Version of full "me2pc html Browser Terminal">
+<! You are free to do as you want: copy, modify, reband it, re-distribute>
+<! Recommend placing css and java in their own files and linking them.
+<! ---->
+<! If you include the Coding Input and/or Drag & Drop options you must>
+<! give credit to copyright holder: Robert J. Cooper, Kingman, AZ, USA>
+<! (c) 2025 - All rights reserved. And include with your code >
+<! The above copyright notice and the below permission notice included too>
+<! ---->
+<! Contact: Robet Cooper - robert@offternet.com for more detais.>
+<! ---->
+<! Permission is hereby granted, free of charge, to any person obtaining a copy>
+<! of this software and associated documentation files (the “Software”), to deal in>
+<! the S noftware without restriction, including without limitation the rights to use,
+<! copy, modify, merge, publish, distribute, sublicense, and/or sell copies>
+<! of the Software, and to permit persons to whom the Software is furnished to do>
+<! so, subject to the following conditions:>
+<! ---->
+
+<! ---->
+<! THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR>
+<! IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS>
+<! FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR>
+<! COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER>
+<! IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN>
+<! CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.>
+
+<html>
+<head>
+    <title>Web Browser me2pc Terminal</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+        }
+
+.terminal-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: auto; /* Makes container grow with content */
+  min-height: 100px; /* Minimum height */
+  max-height: 1300px; /* Maximum height before scrolling */
+  overflow-y: auto; /* Enables vertical scrolling */
+  background-color: #2c3e50; /* Background color */
+  border: 1px solid #444; /* Border style */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px; /* Inner padding */
+  margin: 10px 0; /* Outer spacing */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional shadow */
+}
+
+<! ############ Replaced by above .terminal-conatiner >
+<! .terminal-container { >
+<!  display: flex; >
+<!  flex-direction: column; >
+<!  gap: 5px; >
+<!   max-height: 800px; >
+<!  overflow-y: auto; >
+<! } >
+<! #########################
+
+.terminal-tab {
+  border: 1px solid #444;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+ .terminal-header {
+  background-color: #333;
+  color: #fff;
+  padding: 8px 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px; /* Add this line - adjust the size as needed */
+}
+
+.terminal-header:hover {
+  background-color: #444;
+}
+
+.collapse-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.terminal-window {
+  background-color: #000;
+  padding: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+  transition: max-height 0.3s ease;
+}
+
+.terminal-window.collapsed {
+  max-height: 0;
+  padding: 0;
+  border: none;
+}
+
+/* Specific style for Drag & Drop terminal */
+#dropTerminal {
+    background-color: blue;
+    height: 200px;
+    max-height: 200px !important;
+}
+
+#dropTerminal.collapsed {
+    height: 0;
+    max-height: 0;
+}
+
+<! ############ Removed by updated code above >
+<! .terminal-window.collapsed { >
+<!  max-height: 0; >
+<!   padding: 0; >
+<!  border: none; >
+<! } >
+<! ############## >
+
+        #textInput {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            border: none;
+            outline: none;
+            resize: none;
+            width: 100%;
+            height: 300px;
+        }
+
+	/* Add to your CSS */
+	#dropZone {
+	    transition: border 0.2s;
+	    min-height: 300px;
+	}
+
+
+  <! ######### ADDED FOR terminal-container-custom>
+
+.terminal-container-custom {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: auto; /* Makes container grow with content */
+  min-height: 600px; /* Minimum height */
+  max-height: 1300px; /* Maximum height before scrolling */
+  overflow-y: auto; /* Enables vertical scrolling */
+  background-color: #2c3e50; /* Background color */
+  border: 1px solid #444; /* Border style */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px; /* Inner padding */
+  margin: 10px 0; /* Outer spacing */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional shadow */
+}
+
+/* Specific style for Drag & Drop terminal */
+#websiteTerminal {
+    background-color: white;
+    height: 600px;
+    max-height: 1200px !important;
+}
+
+#websiteTerminal.collapsed {
+    height: 0;
+    max-height: 0;
+}
+
+
+/* Add to your CSS  do I need this ? */
+/*	#websiteZone { */
+/*	    transition: border 0.2s; */
+/*	    min-height: 300px; */
+/*	} */
+
+
+<! ##### END terminal-container-custom ####### >
+
+
+        button {
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            margin-top: 10px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            cursor: pointer;
+            margin-right: 10px;
+font-size: 20px; /* Add this line - adjust the size as needed */
+        }
+
+button,
+.run-button,
+.clear-button,
+.save-button,
+.help-button,
+.getCode-button,
+.load-button,
+.collapse-btn {
+    font-size: 20px; /* Adjust size as needed */
+}
+        button:hover {
+            background-color: #2ecc71;
+        }
+
+        .terminal-buttons {
+            display: flex;
+            gap: 8px;
+        }
+
+        .terminal-button {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .run-button {
+            background-color: #27ae60;
+        }
+
+        .clear-button {
+            background-color: #e74c3c;
+        }
+
+        .clear-button:hover {
+            background-color: #c0392b;
+        }
+
+        .save-button {
+            background-color: #3498db;
+        }
+
+        .save-button:hover {
+            background-color: #2980b9;
+        }
+
+        .help-button {
+            background-color: #9b59b6;
+        }
+
+        .help-button:hover {
+            background-color: #8e44ad;
+        }
+
+        .getCode-button {
+            background-color: #8a8a8a;
+	    color: #000;
+        }
+
+        .getCode-button:hover {
+            background-color: #fff;
+        }
+
+<! ## V0.8 #### ADDED TO fix missing css for file input button >
+
+.load-button {
+    background-color: #f39c12;
+}
+
+.load-button:hover {
+    background-color: #e67e22;
+}
+
+<! ## V0.8 ##### END TO fix missing css for file input button >
+
+
+        .filename-input {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            border: 1px solid #444;
+            padding: 7px;
+            border-radius: 3px;
+            width: 150px;
+        }
+
+        .filename-input::placeholder {
+            color: #aaa;
+        }
+
+        .save-section {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+	.getCode-section {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+
+
+<! CHANGE THIS for your custom Logo or Banner >
+	<center>
+	<img src="https://me2pc.com/images/ui-banner-880x100.png" width="100%">
+	</center>
+
+<! TOP BUTTONS >
+	<div class="button-container">
+    	<button class="clear-button" onclick="clearAndMinimizeAll()" title="Closing all Tabs Windows with one click">Close All Tab Window</button>
+    	<button class="help-button" onclick="openHelp()" title="Open help page for me2pc html Browser Terminal (c) system.">Help</button>
+    	<button class="getCode-button" onclick="getCode()" title="Code under development. Right click page, copy source. You will have this page code.">Download me2pc Terminal</button>
+	</div>
+
+
+<! Mandatory---><!div class="terminal-container"><! Enable This if your want a BORDER AROUND ALL Contents and to use css styling from terminal-container element>
+	<! Mandatory---><div id="closeAll"><!  for javascript expand / collapbse function>
+		<! Mandatory---><div id="closeAll2"><! for javascript expand / collapbse function>
+
+
+<hr>
+<!div class="terminal-container-custom"><Enable this if you want a container boarder and styling from css element: terminal-container-custom>
+
+	<div class="terminal-tab">
+    		<div class="terminal-header" onclick="toggleTerminal(this)" title="Click the help button above to learn more about the me2pc html Browser Terminal">
+      		<span><a href="https://github.com/ritenv/retro-desktop" title="Open retro-disktop Author's github page" target="_Blank" /><font color="yellow">me2pc User interface - Alpha Version 0.0.5</fon><br><font color="white">Based on </font><font color="#09c7ec">retro-desktop a javascript driven API system</font> by Riten Vagadiya MIT Licensed </a></font></span>
+      		<button class="collapse-btn">−</button>
+    		</div>
+    		<div class="terminal-window" id="websiteTerminal"><center><a href="https://github.com/ritenv/retro-desktop" title="Open retro-disktop Author's github page" target="_Blank" />https://github.com/ritenv/retro-desktop</a>
+    		<BR>
+    		<font size="12px" color="black">me2pc User interface - MIT Licensed
+    		<BR>a Javascript driven API system User Interface</font>
+    		<BR>
+      		<a href="https://me2pc.com/me2pc_ui/" target="_blank" title="Click to open me2pc User Interface site - Under Construction"><img src="https://me2pc.com/me2pc_ui/images/custom/me2pc-ui-800x535.png" width="800px" height="535"></a></center>
+    		</div>
+	</div>
+<p></p><! Provides space beteen tabs and place to put comnetns if desired>
+
+	<div class="terminal-tab">
+    		<div class="terminal-header" onclick="toggleTerminal(this)">
+      		<span><img src="https://me2pc.com/me2pc_ui/images/custom/vidoes-yt-banner-very-small-72x23.png"> me2pc html Browser Terminal Videos</span>
+      		<button class="collapse-btn">−</button>
+    		</div>
+    		<div class="terminal-window" id="websiteTerminal">
+      	<a href="https://www.youtube.com/embed/zo_sHVyIc90?si=7nd_IVWujqszx-S0" title="me2pc html Browser Terminal under development"><img src="https://me2pc.com/me2pc_ui/images/custom/me2pc-video.zo_sHVyIc90.png"></a> 	<a href="https://www.youtube.com/embed/qO99H4FKqeM?si=oLEhzoYy4zdhZWWO" title="me2pc html User Interface under development"><img src="https://me2pc.com/me2pc_ui/images/custom/me2pc-video-qO99H4FKqeM.png"></a>
+    		</div>
+
+	</div>
+
+<p></p><! Provides space beteen tabs and place to put comnetns if desired>
+
+  	<div class="terminal-tab">
+    		<div class="terminal-header" onclick="toggleTerminal(this)">
+      		<span>[iframe] https://me2pc.com/testing/click-download/me2pc-commands.php [/iframe]</span>
+      		<button class="collapse-btn">−</button>
+    		</div>
+    		<div class="terminal-window" id="websiteTerminal">
+      		<iframe src="https://me2pc.com/testing/click-download/me2pc-commands.php" style="width:100%; height:100%; border:none; background:white;"></iframe>
+    		</div>
+	</div>
+
+<p></p><! Provides space beteen tabs and place to put comnetns if desired>
+
+	<div class="terminal-tab">
+    		<div class="terminal-header" onclick="toggleTerminal(this)">
+      		<span><font color="yellow" size="5px"><a href="https://w10.host" target="_Blank"><font color="#09c7ec">https://w10.host</a></font> - Web 1.0 Hosting - Saving the Original Internt</font><br><font color="white" size="4px">Web 1.0 Hosting - is an advanced static web hosting with some predefined mostly necessary ready-made scripts: access static websites from old devices</font></span>
+      		<button class="collapse-btn">−</button>
+    		</div>
+    		<div class="terminal-window" id="websiteTerminal">
+      		<iframe src="https://web1.0hosting.net/" style="width:100%; height:100%; border:none; background:white;"></iframe>
+    		</div>
+	</div>
+</div>
+
+<!!!!!!!!!!!!!! ###### DO NOT REMOVE below 3 /div>
+
+<Mandatory closes: div id="CLoseAll2" --->	  </div>
+<Mandatory closes: div id="CLoseAll" --->	</div>
+<! Mandatory div class="terminal-container" ---></div>
+
+<!!!!!!!!!!!!!! ###### DO NOT REMOVE above 3 /div>
+
+<script>
+// Function to toggle terminal visibility
+function toggleTerminal(header) {
+  const terminalWindow = header.nextElementSibling;
+  terminalWindow.classList.toggle("collapsed");
+  const btn = header.querySelector(".collapse-btn");
+  btn.textContent = terminalWindow.classList.contains("collapsed") ? "+" : "−";
+}
+
+// Function to collapse all terminals
+function collapseAllTerminals() {
+  const terminalHeaders = document.querySelectorAll('.terminal-header');
+  terminalHeaders.forEach(header => {
+    const terminalWindow = header.nextElementSibling;
+    terminalWindow.classList.add("collapsed");
+    const btn = header.querySelector(".collapse-btn");
+    btn.textContent = "+";
+  });
+}
+
+// Initialize everything when DOM is fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+  // Initialize drag and drop first
+  initDragAndDrop();
+
+  // Then collapse all terminals
+  collapseAllTerminals();
+});
+
+// Drag and drop initialization
+function initDragAndDrop() {
+  const dropZone = document.getElementById('dropZone');
+  const closeAll2 = document.getElementById('closeAll2');
+  const closeAll = document.getElementById('closeAll');
+
+  if (dropZone && closeAll2 && closeAll) {
+    dropZone.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      dropZone.style.border = '2px dashed #27ae60';
+    });
+
+    dropZone.addEventListener('dragleave', () => {
+      dropZone.style.border = 'none';
+    });
+
+    dropZone.addEventListener('drop', (e) => {
+      e.preventDefault();
+      dropZone.style.border = 'none';
+
+      const file = e.dataTransfer.files[0];
+      if (!file) return;
+
+      if (!file.name.endsWith('.txt') && !file.name.endsWith('.sh') &&
+          !file.name.endsWith('.html') && !file.name.endsWith('.php') &&
+          !file.name.endsWith('.me2pc')) {
+        alert('Only .txt or .sh or .html or .php or .me2pc files allowed');
+        return;
+      }
+
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        closeAll2.value = e.target.result;
+        closeAll.value = e.target.result;
+      };
+      reader.readAsText(file);
+    });
+  }
+}
+</script>
+
+<!  #### V0.8 ADDED HERE to fix missing button javascript functions that were strip on V5 fixing 4 issues >
+<script>
+
+// Add these functions inside your existing <script> tag, preferably after the initDragAndDrop() function
+
+        function saveToFile() {
+            const text = document.getElementById('textInput').value;
+            if (!text) {
+                alert('Please enter some text first!');
+                return;
+            }
+
+            const blob = new Blob([text], { type: 'text/plain' });
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = 'run-command.me2pc';
+            document.body.appendChild(a);
+            a.click();
+
+            setTimeout(() => {
+                document.body.removeChild(a);
+                URL.revokeObjectURL(a.href);
+            }, 100);
+        }
+
+        function clearTerminal() {
+            document.getElementById('textInput').value = '';
+            document.getElementById('textInput').placeholder = "Enter bash command here. Prefix with sudo if needed.";
+        }
+
+        function saveCmdToFile() {
+            const text = document.getElementById('textInput').value;
+            if (!text) {
+                alert('Please enter some text first!');
+                return;
+            }
+
+            let filename = document.getElementById('filenameInput').value.trim();
+            if (!filename) {
+                filename = 'Me2PcCode.sh';
+            }
+
+            if (!filename.endsWith('.sh')) {
+                filename += '.sh';
+            }
+
+            const blob = new Blob([text], { type: 'text/plain' });
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+
+            setTimeout(() => {
+                document.body.removeChild(a);
+                URL.revokeObjectURL(a.href);
+            }, 100);
+        }
+
+        function openHelp() {
+            window.open('https://me2pc.com/html-terminal/help/', '_blank');
+        }
+
+	function getCode() {
+            window.open('#', '_Blank', 'title="Coming Soon - Under Development"');
+        }
+
+function loadFromUrl() {
+    const urlInput = document.getElementById('urlInput');
+    const textInput = document.getElementById('textInput');
+
+    if (urlInput && urlInput.value && textInput) {
+        // Note: This will have CORS restrictions unless the server allows it
+        fetch(urlInput.value)
+            .then(response => response.text())
+            .then(text => {
+                textInput.value = text;
+            })
+            .catch(error => {
+                alert('Error loading URL: ' + error.message);
+            });
+    } else {
+        alert('Please enter a valid URL');
+    }
+}
+
+</script>
+
+<script>
+// Clear and Minimize both code input and drag & drop terminal windows
+function clearAndMinimizeAll() {
+  document.getElementById('closeAll').value = '';
+  document.getElementById('closeAll2').value = '';
+  location.reload(); //8 Ensures D&D works reliably
+}
+
+// NEED javascrit function here to parse empty variable to both these windows without minimizing them: windows id="inputTerminal and id="dropTerminal
+
+</script>
+
+<br>
+<! for custom footer >
+</body>
+</html>
