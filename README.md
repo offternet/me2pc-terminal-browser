@@ -14,8 +14,8 @@
       </td>
     </tr>
     <tr>
-      <td style="vertical-align: top; text-align: center;"><big><span style="font-family: sans-serif;">See MIT License below for Main scripts: Free template is GPL 3.0</span></big>
-      <span style="font-family: Courier New,Courier,monospace;">Protected Process Schema !!!</span><br>
+      <td style="vertical-align: top; text-align: center;"><big><span style="font-family: sans-serif;"><span style="font-family: Courier New,Courier,monospace;">Protected Process Schema !!!</span><br>See MIT License below for Main scripts: <br> Free template is GPL 3.0</span></big>
+      
       </td>
     </tr>
     <tr>
