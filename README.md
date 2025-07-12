@@ -10,11 +10,11 @@
 
   <tbody>
     <tr align="center">
-      <td style="vertical-align: top;"><big><big><big><span style="font-weight: bold;">me2pc html Browser Terminal Help (c)</span></big></big></big>
+      <td style="vertical-align: top;"><big><big><big><span style="font-weight: bold;">me2pc html Browser Terminal (c)</span></big></big></big>
       </td>
     </tr>
     <tr>
-      <td style="vertical-align: top; text-align: center;"><big><span style="font-family: sans-serif;">See MIT License below:</span></big>
+      <td style="vertical-align: top; text-align: center;"><big><span style="font-family: sans-serif;">See MIT License below for Main scripts: Free template is GPL 3.0</span></big>
       <span style="font-family: Courier New,Courier,monospace;">Protected Process Schema !!!</span><br>
       </td>
     </tr>
