@@ -2,21 +2,18 @@
 <html><head>
   
   <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
-  <title>me2pc html Browser Terminal Help</title>
+ <title>me2pc html Browser Terminal Help</title>
 
   
 </head><body>
-<table style="text-align: left; width: 50%; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+<table style="text-align: left; width: 90%; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
 
   <tbody>
     <tr align="center">
-      <td style="vertical-align: top;"><big><big><big><span style="font-weight: bold;">me2pc html Browser Terminal (c)</span></big></big></big>
-      </td>
+      <td>e2pc html Browser Terminal (c)</td>
     </tr>
     <tr>
-      <td style="vertical-align: top; text-align: center;"><big><span style="font-family: sans-serif;"><span style="font-family: Courier New,Courier,monospace;">Protected Process Schema !!!</span><br>See MIT License below for Main scripts: <br> Free template is GPL 3.0</span></big>
-      
-      </td>
+      <td style="vertical-align: top; text-align: center;"></td>
     </tr>
     <tr>
       <td style="vertical-align: top;"><big><big><big><span style="font-family: monospace; font-weight: bold;">Demo
