@@ -9,7 +9,7 @@
 <table style="text-align: left; width: 90%; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
 
   <tbody>
-    <tr align="center">
+    <tr>
       <td>e2pc html Browser Terminal (c)</td>
     </tr>
     <tr>
