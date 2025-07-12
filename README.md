@@ -19,7 +19,29 @@
       </td>
     </tr>
     <tr>
-      <td style="vertical-align: top;"><br>
+      <td style="vertical-align: top;"><big><big><big><span style="font-family: monospace; font-weight: bold;">Demo
+Sites:</span></big><br style="font-family: monospace;">
+<br style="font-family: monospace;">
+<a style="font-family: monospace;"
+href="https://me2pc.com/html-terminal/free-demo/" target="_blank">https://me2pc.com/html-terminal/free-demo/</a><br
+style="font-family: monospace;">
+<a style="font-family: monospace;"
+href="https://lowscamp.com/elgg6testing/files/html-terminal/index.html"
+target="_blank"><br>
+https://lowscamp.com/elgg6testing/files/html-terminal/index.html</a><br
+style="font-family: monospace;">
+<a style="font-family: monospace;"
+href="https://offternet.w10.site/cgi-bin/cms/internet" target="_blank"><br>
+https://offternet.w10.site/cgi-bin/cms/internet</a><br
+style="font-family: monospace;">
+<br style="font-family: monospace;">
+<a style="font-family: monospace;"
+href="https://me2pc.com/html-terminal/me2pc-html-browser-terminal.html"
+target="_blank">https://me2pc.com/html-terminal/me2pc-html-browser-terminal.html</a><br
+style="font-family: monospace;">
+<br style="font-family: monospace;">
+<a style="font-family: monospace;"
+href="https://lowscamp.com/me2pc_ui/html-terminal/" target="_blank">https://lowscamp.com/me2pc_ui/html-terminal/</a></big></big><br><br>
       </td>
     </tr>
 <tr>
