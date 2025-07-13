@@ -208,9 +208,13 @@ DEALINGS IN THE SOFTWARE.</span></big></big><br>
     </tr>
   </tbody>
 </table>
-
 <br>
-
-<br>
-
+<p>me2pc html Browser Coding Terminal with Drag and Drop Input - MIT Licensed. Must give Author Credit. Copywrited Protected Schema.</p>
+<center>
+<img src="https://me2pc.com/html-terminal/Scrn2-Coding-Template-V0.8.png" width="800px">
+</center>
+<hr>
+<p>me2pc Free GPL 3.0 Collapsible Tab Template html/css/JavaScript Ver 1.0</p>
+<img src="https://me2pc.com/html-terminal/scrnPrnt-Free-Template-V1.0-tabs-closed.png" width="800px">
+</center>
 </body></html>
