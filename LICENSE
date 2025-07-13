@@ -1,21 +1,68 @@
-MIT License
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <title>me2pc html Browser Terminal Help</title>
 
-Copyright (c) 2025 Robert Cooper
+  
+</head><body>
+<table style="text-align: left; width: 50%; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+  <tbody>
+    <tr align="center">
+   <td style="vertical-align: top;"><big><big><span style="font-family: monospace;"> Copyrighted <font size="6">©</font>
+July 08, 2025 by Robert J. Cooper. Licensed: MIT <br>
+      <br>
+The MIT License (MIT)</span><span style="font-family: monospace;"> <br>
+      <br>
+      <span style="font-weight: bold; text-decoration: underline;">PROTECTED
+PROCESS SCHEMA:</span><br>
+Prior to July 08, 2025 there was NO KNOWN process that remotely or
+similarly handled user code production and execution as being
+copywrited by "Copyright Owner: Robert J. Cooper, Kingmna, AZ, US"
+code. Code consists of 2 or more html/css/js/bash files which does has
+the following "PROTECTED SCHEMA":<br>
+1. User enters their custom code or drops in any bash code.<br>
+      <span style="font-weight: bold;">2. User code is downloaded to a
+file from browser to user Device.</span><br>
+      <span style="font-weight: bold;">3. Downloaded user file waits in
+que for bash to filter and execute.</span><br>
+      <span style="font-weight: bold;">4. Bash finds file in que
+directory, filters and execute's user code.</span><br>
+5. Code is executed in a bash terminal with or without sudo prefix.<br>
+6. Code can be any proper bash code.<br>
+      <span style="font-weight: bold;">7. Code can be pasted with
+Ctrl+V or Mouse right click -&gt; paste.</span><br>
+      <span style="font-weight: bold;">9. Code also process me2pc
+spoecial formated code<br>
+10.Rename file and save to device with any name.extension.</span><br>
+      <br>
+This process is subject to enhancement without any notice.<br>
+      <br>
+&lt;Copyright holder: Robert J. Cooper, Kingman, AZ, USA. email: <a href="mailto:robert@offternet.com">robert@offternet.com</a>&gt;</span>
+      <br style="font-family: monospace;">
+      <br style="font-family: monospace;">
+      <span style="font-family: monospace;">Permission is hereby
+granted, free of charge, to any person obtaining a copy of this
+software and associated documentation files (the &#8220;Software&#8221;), to deal
+in the Software without restriction, including without limitation the
+rights to use, copy, modify, merge, publish, distribute, sublicense,
+and/or sell copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following conditions:</span><br style="font-family: monospace;">
+      <br style="font-family: monospace;">
+      <span style="font-family: monospace;">The above copyright notice
+and this permission notice shall be included in all copies or
+substantial portions of the Software.</span><br style="font-family: monospace;">
+      <br style="font-family: monospace;">
+      <span style="font-family: monospace;">THE SOFTWARE IS PROVIDED
+&#8220;AS IS&#8221;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS
+OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.</span></big></big><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
