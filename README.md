@@ -203,7 +203,7 @@ DEALINGS IN THE SOFTWARE.</span></big></big><br>
 <p>me2pc html Browser Coding Terminal with Drag and Drop Input - MIT Licensed. Must give Author Credit. Copywrited Protected Schema.</p>
 <center>
 <br><br>
-<p>me2pc User Interface </p>
+<p>me2pc User Interface based on retro-desktop <a href="https://github.com/ritenv/retro-desktop" title="Click to go to source Github page" target="_Blank">Author: Copyright (c) 2016 Riten Vagadiya MIT License:</a></p>
 <img src="https://lowscamp.com/files/custom/images/me2pc-ui-800x535.png" width="800px">
 <br><br>
 <img src="https://me2pc.com/html-terminal/Scrn2-Coding-Template-V0.8.png" width="800px">
