@@ -1,20 +1,12 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html><head>
-  
-  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
- <title>me2pc html Browser Terminal Help</title>
-
-  
-</head><body>
 <table style="text-align: left; width: 90%; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
 
   <tbody>
     <tr>
-      <td>e2pc html Browser Terminal / Web Browser Based Bash GUI (c) July 08, 2025<br>
+      <td><b>me2pc html Browser Terminal / me2pc Web Browser Based Bash GUI (c) July 08, 2025<br>
       <br> 
       Browser -- JavaScript Download Special filenames -- Bash process: command, Open App - Webpage, Anything & Everything <br>
       <br>
-      See flow chart below on Design of me2pc Web Browser bash GUI.</td>
+      See flow chart below on Design of me2pc Web Browser bash GUI.</b></td>
     </tr>
     <tr>
       <td style="vertical-align: top; text-align: center;"></td>
@@ -226,4 +218,4 @@ DEALINGS IN THE SOFTWARE.</span></big></big><br>
 <img src="https://me2pc.com/html-terminal/scrnPrnt-Free-Template-V1.0-tabs-closed.png" width="800px">
 <br>
 </center>
-</body></html>
+
