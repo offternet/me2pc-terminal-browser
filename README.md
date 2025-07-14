@@ -16,25 +16,20 @@
 Sites:</span></big><br style="font-family: monospace;">
 <br style="font-family: monospace;">
 <a style="font-family: monospace;"
-href="https://me2pc.com/html-terminal/free-demo/" target="_blank">https://me2pc.com/html-terminal/free-demo/</a><br
+href="https://lowscamp.com/testing/html-include/add-checkbox/" target="_blank">https://lowscamp.com/testing/html-include/add-checkbox/</a><br
 style="font-family: monospace;">
 <a style="font-family: monospace;"
 href="https://lowscamp.com/elgg6testing/files/html-terminal/index.html"
 target="_blank"><br>
-https://lowscamp.com/elgg6testing/files/html-terminal/index.html</a><br
-style="font-family: monospace;">
-<a style="font-family: monospace;"
-href="https://offternet.w10.site/cgi-bin/cms/internet" target="_blank"><br>
-https://offternet.w10.site/cgi-bin/cms/internet</a><br
-style="font-family: monospace;">
+https://lowscamp.com/elgg6testing/files/html-terminal/index.html</a>
 <br style="font-family: monospace;">
+        <br style="font-family: monospace;">
 <a style="font-family: monospace;"
 href="https://me2pc.com/html-terminal/me2pc-html-browser-terminal.html"
 target="_blank">https://me2pc.com/html-terminal/me2pc-html-browser-terminal.html</a><br
 style="font-family: monospace;">
 <br style="font-family: monospace;">
-<a style="font-family: monospace;"
-href="https://lowscamp.com/me2pc_ui/html-terminal/" target="_blank">https://lowscamp.com/me2pc_ui/html-terminal/</a></big></big><br><br>
+<a style="font-family: monospace;" href="https://lowscamp.com/me2pc_ui/" target="_blank">https://lowscamp.com/me2pc_ui</a></big></big><br><br>
       </td>
     </tr>
 <tr>
@@ -207,6 +202,10 @@ DEALINGS IN THE SOFTWARE.</span></big></big><br>
 <br>
 <p>me2pc html Browser Coding Terminal with Drag and Drop Input - MIT Licensed. Must give Author Credit. Copywrited Protected Schema.</p>
 <center>
+<br><br>
+<p>me2pc User Interface </p>
+<img src="https://lowscamp.com/files/custom/images/me2pc-ui-800x535.png" width="800px">
+<br><br>
 <img src="https://me2pc.com/html-terminal/Scrn2-Coding-Template-V0.8.png" width="800px">
 <br><br>
 <br>
