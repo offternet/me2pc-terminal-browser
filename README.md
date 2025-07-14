@@ -10,7 +10,11 @@
 
   <tbody>
     <tr>
-      <td>e2pc html Browser Terminal (c)</td>
+      <td>e2pc html Browser Terminal / Web Browser Based Bash GUI (c) July 08, 2025<br>
+      <br> 
+      Browser -- JavaScript Download Special filenames -- Bash process: command, Open App - Webpage, Anything & Everything <br>
+      <br>
+      See flow chart below on Design of me2pc Web Browser bash GUI.</td>
     </tr>
     <tr>
       <td style="vertical-align: top; text-align: center;"></td>
@@ -212,9 +216,14 @@ DEALINGS IN THE SOFTWARE.</span></big></big><br>
 <p>me2pc html Browser Coding Terminal with Drag and Drop Input - MIT Licensed. Must give Author Credit. Copywrited Protected Schema.</p>
 <center>
 <img src="https://me2pc.com/html-terminal/Scrn2-Coding-Template-V0.8.png" width="800px">
+<br><br>
+<br>
+<p>me2pc Design (c) July 08, 2025. Web Browser Bash GUI. JavaScript frontend processor for browser to backend bash scripting backend</p>
+  <img src="https://me2pc.com/html-terminal/me2pc-web-based-bash-gui-process.jpg" width="800px">
 </center>
 <hr>
 <p>me2pc Free GPL 3.0 Collapsible Tab Template html/css/JavaScript Ver 1.0</p>
 <img src="https://me2pc.com/html-terminal/scrnPrnt-Free-Template-V1.0-tabs-closed.png" width="800px">
+<br>
 </center>
 </body></html>
