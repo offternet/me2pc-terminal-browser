@@ -29,7 +29,7 @@ href="https://me2pc.com/html-terminal/me2pc-html-browser-terminal.html"
 target="_blank">https://me2pc.com/html-terminal/me2pc-html-browser-terminal.html</a><br
 style="font-family: monospace;">
 <br style="font-family: monospace;">
-<a style="font-family: monospace;" href="https://lowscamp.com/me2pc_ui/" target="_blank">https://lowscamp.com/me2pc_ui</a></big></big><br><br>
+<a style="font-family: monospace;" href="https://me2pc.com/me2pc_ui/" target="_blank">https://me2pc.com/me2pc_ui</a></big></big><br><br>
       </td>
     </tr>
 <tr>
